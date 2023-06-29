@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Marlon-Sama</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="person.svg" type="image/x-icon">
+</head>
+<body>
+    <button id="open-btn">Open modal</button>
+    <dialog id="modal">
+        <header>
+             <h1>Settings</h1>
+            <button class="icon icon-btn">
+                &#xe711;
+            </button>
+        </header>
+        <section class="modal-body">
+            <aside>
+                <ul>
+                    <li class="nav-list active"><i class="icon">&#xe713;</i><span style="font-size: 13px; color: #fff;">General</span></li>
+                    <li class="nav-list"><i class="icon">&#xe779;</i><span style="font-size: 13px; color:#fff">Data Controls</span></li>
+                </ul>
+            </aside>
+            <section class="setting-list">
+                <ul>
+                    <li>
+                        <div class="his-hero">
+                            <h3>Chat History & Training</h3>
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                              </label>
+                        </div>
+                        <p class="lorem">Save new chats to your history and allow them to be used to improve ChatGPT via model training. Unsaved chats will be deleted from our systems within 30 days. <a href="http://">Learn more!</a> </p>
+                    </li>
+                    <li>
+                        <div class="his-hero">
+                            <h3>Export data</h3>
+                            <button>Export</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="his-hero">
+                            <h3>Delete account</h3>
+                            <button class="danger">Delete</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </dialog>
+    <script>
+        const openBtn = document.querySelector("#open-btn");
+        const modal = document.querySelector("#modal");
+
+        openBtn.addEventListener("click", () => {
+            modal.showModal()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family:'donal';
+    src: url("Segoe Fluent Icons.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(212,212,221);
+    font-weight: 300;
+    
+}
+dialog{
+    background-color: rgb(32,33,35);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    border: none;
+
+}
+h1{
+    font-size: 16px;
+    font-weight: 500;
+}
+dialog::backdrop{
+    background-color: rgba(46, 47, 58, 0.66);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 8px 24px 24px;
+    border-bottom: rgb(55, 56,57) solid 1px;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+  }
+  
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .his-hero button{
+    background-color: rgb(52,53,65);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border:rgb(86,88,105)1px solid;
+    cursor: pointer;
+  }
+  .his-hero button:hover{
+    border:rgb(86,88,105)1px solid;
+    background-color:rgba(64,65,79, 1);
+  }
+  .his-hero button.danger:hover{
+    background-color:rgba(153,27,27,1);
+    color: rgb(244, 244, 245,1);
+  }
+  .his-hero button.danger{
+    background-color: rgb(185,28,28);
+    border: transparent 1px solid;
+
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  .lorem{
+    font-size: 12px;
+    font-weight: 100;
+    margin: 8px 0 0 ;
+  }
+  a{
+    font-weight: 100;
+  }
+  .setting-list ul{
+        display: flex;
+        gap: 0.75rem;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  .his-hero h3 {
+     font-size: 14px;
+      
+  }
+  .his-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .setting-list{
+    width: 428px;
+  }
+  .setting-list li{
+    padding: 0 0 12px;
+    border-bottom: rgb(55, 56,57) solid 1px;
+
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+.icon{
+    font-family: "donal";
+    font-style: normal;
+    line-height: 16px;
+    user-select: none;
+}
+.icon-btn{
+    background-color: transparent;
+    border: none;
+   
+    width: 32px;
+    height: 32px;
+    box-sizing: content-box;
+    border-radius: 4px;
+}
+.icon-btn:hover{
+    background-color: rgb(212,212,221, 0.12);
+    
+}
+.nav-list{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+    height: 32px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.nav-list.active{
+    background-color: rgb(52,53,65);
+    
+    
+}
+ul{
+    list-style-type: none;
+    flex-direction: column;
+    display: flex;
+    
+    
+}
+.modal-body{
+    display: flex;
+    padding: 16px 24px 24px ;
+    gap: 20px;
+    min-height: 340px;
+    
+}
+aside{
+    width: 180px;
+    flex-shrink: 0;
+}
